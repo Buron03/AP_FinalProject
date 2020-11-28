@@ -1,0 +1,9 @@
+C:\Users\eilopez\Desktop\FinalProject\AppContext\bin\Debug\netstandard2.1\AppContext.deps.json
+C:\Users\eilopez\Desktop\FinalProject\AppContext\bin\Debug\netstandard2.1\AppContext.dll
+C:\Users\eilopez\Desktop\FinalProject\AppContext\bin\Debug\netstandard2.1\AppContext.pdb
+C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.csprojAssemblyReference.cache
+C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.AssemblyInfoInputs.cache
+C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.AssemblyInfo.cs
+C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.csproj.CoreCompileInputs.cache
+C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.dll
+C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.pdb
