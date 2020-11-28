@@ -14392,6 +14392,16 @@
   "RootNamespace": "WebApp",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\teachers.cshtml",
+      "TargetPath": "Pages\\teachers.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\groups.cshtml",
+      "TargetPath": "Pages\\groups.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\_ViewStart.cshtml",
       "TargetPath": "Pages\\_ViewStart.cshtml",
       "FileKind": "mvc"
@@ -14404,6 +14414,11 @@
     {
       "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\index.cshtml",
       "TargetPath": "Pages\\index.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\assignatures.cshtml",
+      "TargetPath": "Pages\\assignatures.cshtml",
       "FileKind": "mvc"
     },
     {

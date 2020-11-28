@@ -1,31 +1,31 @@
 @page
 @functions
 {
-  public string DayName { get; set; }
-
   public void OnGet()
   {
-    ViewData["Title"] = "Northwind"; 
-    Model.DayName = DateTime.Now.ToString("dddd");
+    ViewData["Title"] = "ase3"; 
   }
 }
+
 <div class="jumbotron">
-  <h1 class="display-3">Welcome</h1>
-  <p class="lead">We supply products to our customers.</p>
+  <h1 class="display-3">Welcome to School System</h1>
+  <p class="lead">We are glad for your visit</p>
   <hr />
-  <p>It's @Model.DayName! Our customers include restaurants, hotels, and cruise lines.</p>
+  <p>Check about the info</p>
   <p>
     <a class="btn btn-primary" 
        href="subjects">Subjects</a>
   </p>
   <p>
-    <a class="btn btn-primary" href="packtfeatures/employees">
-      Contact our employees
-    </a>
+    <a class="btn btn-primary" 
+        href="teachers">Teachers</a>
   </p>
   <p>
-    <a class="btn btn-primary" href="/customers-by-country">
-      Customers By Country
-    </a>
+    <a class="btn btn-primary" 
+        href="groups">Groups</a>
+  </p>
+  <p>
+    <a class="btn btn-primary" 
+        href="assignatures">Assignatures</a>
   </p>
 </div>

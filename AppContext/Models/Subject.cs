@@ -7,6 +7,7 @@ namespace AppContext.Models
     {
         [Key]
         public int IdSubject { get; set; }
+        
         public string Name { get; set; }
         public int TheoreticalHours { get; set; }
         public int PracticalHours { get; set; }

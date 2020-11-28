@@ -7,21 +7,21 @@ using AppContext.Models;
 
 namespace WebApp.Pages
 {
-   public class SubjectsModel : PageModel
+   public class GroupsModel : PageModel
    {
-       public IEnumerable<Subject> Subjects { get; set; }
+       public IEnumerable<SchoolGroup> Groups { get; set; }
        
        private School db;
     
-       public SubjectsModel(School injectedContext)
+       public GroupsModel(School injectedContext)
        {
            db = injectedContext;
        }
 
        public void OnGet()
        {
-           ViewData["Title"] = "Subjects";
-           Subjects = db.Subjects;
+           ViewData["Title"] = "Groups";
+           Groups = db.SchoolGroups;
        }
    } 
 }
