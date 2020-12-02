@@ -1,31 +1,61 @@
 @page
-@functions
-{
-  public void OnGet()
-  {
-    ViewData["Title"] = "ase3"; 
-  }
+@model WebApp.Pages.Models.StartModel;
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<head>
+  <style>
+    .login,
+    .image {
+    min-height: 70vh;
 }
 
-<div class="jumbotron">
-  <h1 class="display-3">Welcome to School System</h1>
-  <p class="lead">We are glad for your visit</p>
-  <hr />
-  <p>Check about the info</p>
-  <p>
-    <a class="btn btn-primary" 
-       href="subjects">Subjects</a>
-  </p>
-  <p>
-    <a class="btn btn-primary" 
-        href="teachers">Teachers</a>
-  </p>
-  <p>
-    <a class="btn btn-primary" 
-        href="groups">Groups</a>
-  </p>
-  <p>
-    <a class="btn btn-primary" 
-        href="assignatures">Assignatures</a>
-  </p>
+.bg-image {
+  background-image: url('https://res.cloudinary.com/mhmd/image/upload/v1555917661/art-colorful-contemporary-2047905_dxtao7.jpg');
+  background-size: cover;
+  background-position: center center;
+}
+
+  </style>
+</head>
+
+<div class="container-fluid">
+    <div class="row no-gutter">
+        <!-- The image half -->
+        <div class="col-md-6 d-none d-md-flex bg-image"></div>
+
+
+        <!-- The content half -->
+        <div class="col-md-6 bg-light">
+            <div class="login d-flex align-items-center py-5">
+
+                <!-- Demo content-->
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-10 col-xl-7 mx-auto">
+                            <h3 class="display-4">Welcome to ASE3 System</h3>
+                            <p class="text-muted mb-4">Login with your username and password</p>
+                            <form method="post">
+                                <div class="form-group mb-3">
+                                    <input asp-for="TextUsername" class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Username" required=""/>
+                                </div>
+                                <div class="form-group mb-3">
+                                    <input asp-for="TextPassword" class="form-control rounded-pill border-0 shadow-sm px-4 text-primary" placeholder="Password" required=""/>
+                                </div>
+                                <button type="submit" class="btn btn-primary btn-block text-uppercase mb-2 rounded-pill shadow-sm">Sign in</button>
+                            </form>
+                        </div>
+                    </div>
+                </div><!-- End -->
+
+            </div>
+        </div><!-- End -->
+    </div>
 </div>
+
+<!-- Error Toast -->
+@if (Model.HasError)
+{
+    <div class="alert alert-danger">
+        <strong>Error!</strong> Wrong credentials
+    </div>
+}

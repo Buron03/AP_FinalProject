@@ -75,3 +75,4 @@ C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\assignatures.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\groups.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\teachers.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\menu.cshtml.g.cs

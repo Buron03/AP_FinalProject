@@ -14392,6 +14392,11 @@
   "RootNamespace": "WebApp",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\menu.cshtml",
+      "TargetPath": "Pages\\menu.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\teachers.cshtml",
       "TargetPath": "Pages\\teachers.cshtml",
       "FileKind": "mvc"
