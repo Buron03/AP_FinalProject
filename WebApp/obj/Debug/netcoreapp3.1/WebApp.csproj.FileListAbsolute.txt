@@ -29,11 +29,8 @@ C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\WebApp.Razo
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\WebApp.RazorTargetAssemblyInfo.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\WebApp.Views.pdb
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\index.cshtml.g.cs
-C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\AppContext.dll
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\AppContext.pdb
-C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\subjects.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\Microsoft.DotNet.PlatformAbstractions.dll
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
@@ -72,7 +69,10 @@ C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\e_sqlite3.dll
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlite3.dll
 C:\Users\eilopez\Desktop\FinalProject\WebApp\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
-C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\assignatures.cshtml.g.cs
-C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\groups.cshtml.g.cs
-C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\teachers.cshtml.g.cs
-C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\menu.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Searches\assignatures.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Searches\groups.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Searches\subjects.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Searches\teachers.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_LoginLayout.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\Shared\_AdminMenuLayout.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\admin_home.cshtml.g.cs

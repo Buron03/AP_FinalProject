@@ -8,4 +8,6 @@ Info about how the database is working
 
 ## ASP NET implementation
 
-Info about how the web page is working
+Info about how the web page is working  
+
+![A](/InfoFiles/Test.jpg#thumbnail)

@@ -1,0 +1,2 @@
+--Query 
+SELECT * FROM Teachers;

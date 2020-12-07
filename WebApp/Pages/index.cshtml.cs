@@ -28,7 +28,7 @@ namespace WebApp.Pages.Models
        
        [BindProperty(SupportsGet = true)]
        public bool HasError { get; set; }
-      
+
        private School db;
     
        public StartModel(School injectedContext)
@@ -55,7 +55,7 @@ namespace WebApp.Pages.Models
                    {
                        if (teacher.PayrollNumber == payrollNumber && teacher.Password == TextPassword)
                        {
-                           return RedirectToPage("/menu");
+                           return RedirectToPage("/admin_home");
                        }
                    }
                }
