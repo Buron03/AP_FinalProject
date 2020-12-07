@@ -14392,43 +14392,43 @@
   "RootNamespace": "WebApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\Searches\\assignatures.cshtml",
-      "TargetPath": "Pages\\Searches\\assignatures.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\groups.cshtml",
+      "TargetPath": "pages\\search\\groups.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\admin_home.cshtml",
-      "TargetPath": "Pages\\admin_home.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\subjects.cshtml",
+      "TargetPath": "pages\\search\\subjects.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\Searches\\subjects.cshtml",
-      "TargetPath": "Pages\\Searches\\subjects.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\admin_home.cshtml",
+      "TargetPath": "pages\\admin_home.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\Shared\\_AdminMenuLayout.cshtml",
-      "TargetPath": "Pages\\Shared\\_AdminMenuLayout.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\shared\\_AdminMenuLayout.cshtml",
+      "TargetPath": "pages\\shared\\_AdminMenuLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\index.cshtml",
-      "TargetPath": "Pages\\index.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\assignatures.cshtml",
+      "TargetPath": "pages\\search\\assignatures.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\Shared\\_LoginLayout.cshtml",
-      "TargetPath": "Pages\\Shared\\_LoginLayout.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\teachers.cshtml",
+      "TargetPath": "pages\\search\\teachers.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\Searches\\groups.cshtml",
-      "TargetPath": "Pages\\Searches\\groups.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\index.cshtml",
+      "TargetPath": "pages\\index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\Pages\\Searches\\teachers.cshtml",
-      "TargetPath": "Pages\\Searches\\teachers.cshtml",
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\shared\\_LoginLayout.cshtml",
+      "TargetPath": "pages\\shared\\_LoginLayout.cshtml",
       "FileKind": "mvc"
     }
   ],

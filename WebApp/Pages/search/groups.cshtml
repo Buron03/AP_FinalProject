@@ -2,8 +2,12 @@
 @model WebApp.Pages.GroupsModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<div class="row">
-  <h1 class="display-2">Groups</h1>
+@{
+  Layout = "../shared/_AdminMenuLayout.cshtml";
+}
+
+<div class="jumbotron">
+  <h1 class="display-3">Groups</h1>
   <table class="table">
     <thead class="thead-inverse">
       <tr><th>School Groups</th></tr>
@@ -15,12 +19,4 @@
     }
     </tbody>
   </table>
-</div>
-<div class="row">
-
-  @* <form method="POST">
-    <div><input asp-for="Supplier.CompanyName" /></div>
-    <input type="submit" />
-  </form> *@
-
 </div>

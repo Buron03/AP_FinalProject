@@ -11,13 +11,21 @@
   
   <style>
 
- body {
+/*******************************************************************************
+ *              bootstrap-rtl (version 4.0.0 beta2)
+ *      Author: Morteza Ghalambor
+ *  Created on: september 7,2016
+ *     Project: bootstrap-rtl
+ *   Copyright: GPL
+ *******************************************************************************/
+
+body {
     direction: rtl;
-    text-align:right
+    text-align:left
 }
 
 dd {
-    margin-right: 0;
+    margin-left: 0;
 }
 
 figure {
@@ -25,11 +33,11 @@ figure {
 }
 
 caption {
-    text-align: right;
+    text-align: left;
 }
 
 th {
-    text-align: right;
+    text-align: left;
 }
 
 .list-unstyled {
@@ -248,9 +256,9 @@ dl.row > dd + dt {
 
 .dropdown-menu {
     right: 0;
-    float: right;
+    float: left;
     margin: 2px 0 0;
-    text-align: right;
+    text-align: left;
 }
 
 .dropdown-divider {
@@ -410,11 +418,11 @@ dl.row > dd + dt {
     }
 
 .media-list {
-    padding-right: 0;
+    padding-left: 0;
 }
 
 .list-group {
-    padding-right: 0;
+    padding-left: 0;
 }
 
 .embed-responsive .embed-responsive-item,
@@ -422,7 +430,7 @@ dl.row > dd + dt {
 .embed-responsive embed,
 .embed-responsive object,
 .embed-responsive video {
-    right: 0;
+    left: 0;
 }
 
 .close {
@@ -430,7 +438,7 @@ dl.row > dd + dt {
 }
 
 .tooltip {
-    text-align: right;
+    text-align: left;
 }
 
     .tooltip.tooltip-top .tooltip-arrow,
@@ -447,7 +455,7 @@ dl.row > dd + dt {
 
 .popover {
     right: 0;
-    text-align: right;
+    text-align: left;
 }
 
     .popover.popover-top .popover-arrow,
@@ -497,15 +505,6 @@ dl.row > dd + dt {
     right: 100%;
 }
 
-/*.carousel-control {
-  right: 0;
-}
-
-.carousel-control.right {
-  left: 0;
-  right: auto;
-}*/
-
 .carousel-control .icon-prev {
     right: 50%;
     margin-right: -10px;
@@ -528,7 +527,6 @@ dl.row > dd + dt {
     z-index: 10;
 }
 
-
 body {
   overflow-x: hidden;
 }
@@ -546,6 +544,7 @@ body {
 }
 
 #sidebar-wrapper {
+  text-align: right;
   z-index: 1000;
   position: fixed;
   right: 250px;
@@ -553,7 +552,7 @@ body {
   height: 100%;
   margin-right: -250px;
   overflow-y: auto;
-  background: #000;
+  background: #303030;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
@@ -561,13 +560,13 @@ body {
 }
 
 #wrapper.toggled #sidebar-wrapper {
-  width: 250px;
+  width: 200px;
 }
 
 #page-content-wrapper {
   width: 100%;
   position: absolute;
-  padding: 15px;
+  padding: 30px;
 }
 
 #wrapper.toggled #page-content-wrapper {
@@ -633,26 +632,20 @@ body {
   <nav class="navbar navbar-expand navbar-dark bg-primary"> <a href="#menu-toggle" id="menu-toggle" class="navbar-brand"><span class="navbar-toggler-icon"></span></a> <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample02" aria-controls="navbarsExample02" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
     <div class="collapse navbar-collapse" id="navbarsExample02">
       <ul class="navbar-nav mr-auto">
-        <li class="nav-item active"> <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a> </li>
-        <li class="nav-item"> <a class="nav-link" href="#">Link</a> </li>
+        <li class="nav-item active"> <a class="nav-link" href="../admin_home"> Home <span class="sr-only">(current)</span></a> </li>
+        <li class="nav-item"> <a class="nav-link" href="#">Logout</a> </li>
       </ul>
       <form class="form-inline my-2 my-md-0"> </form>
     </div>
   </nav>
 
-  <div id="wrapper" class="toggled">
-    
+  <div id="wrapper">
     <!-- Sidebar -->
     <div id="sidebar-wrapper">
       <ul class="sidebar-nav">
-        <li class="sidebar-brand"> <a href="#"> Start Bootstrap </a> </li>
-        <li> <a href="#">Dashboard</a> </li>
-        <li> <a href="#">Shortcuts</a> </li>
-        <li> <a href="#">Overview</a> </li>
-        <li> <a href="#">Events</a> </li>
-        <li> <a href="#">About</a> </li>
-        <li> <a href="#">Services</a> </li>
-        <li> <a href="#">Contact</a> </li>
+        <li class="sidebar-brand"> <a href="../admin_home"> Home </a> </li>
+        <li> <a href="#">Views</a> </li>
+        <li> <a href="#">Add</a> </li>
       </ul>
     </div> 
     <!-- /#sidebar-wrapper -->
@@ -676,7 +669,9 @@ body {
   <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
   <script src="js/jquery.min.js"></script>
-  <script src="js/bootstrap.bundle.min.js"></script> <!-- Menu Toggle Script -->
+  <script src="js/bootstrap.bundle.min.js"></script> 
+  
+  <!-- Menu Toggle Script -->
   <script>
     $(function(){
       $("#menu-toggle").click(function(e) {

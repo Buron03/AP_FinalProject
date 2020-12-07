@@ -1,0 +1,43 @@
+@page
+@model WebApp.Pages.TeachersModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+  Layout = "../shared/_AdminMenuLayout.cshtml";
+}
+
+<div class="jumbotron">
+  <h1 class="display-3">Teachers</h1>
+  <table class="table">
+    <thead class="thead-inverse">
+      <tr>
+        <th>Status</th>
+        <th>Total Subjects</th>
+        <th>Total Groups</th>
+        <th>Total Hours</th>
+        <th>Kind</th>
+        <th>Name</th>
+      </tr>
+    </thead>
+    <tbody>
+    @foreach(var teacher in Model.Teachers)
+    {
+      <tr>
+          @if(Model.GetStatus(teacher))
+          {
+            <td class="bg-success">Complete</td>
+          }
+          else
+          {
+            <td class="bg-warning">Incomplete</td>
+          }
+        <td>@Model.GetTotalSubjects(teacher.IdTeacher)</td>
+        <td>@Model.GetTotalGroups(teacher.IdTeacher)</td>
+        <td>@Model.GetTotalHours(teacher.IdTeacher)</td>
+        <td>@Model.GetKind(teacher.IdTeacherKind).Name</td>
+        <td>@teacher.FirstName @teacher.SecondName @teacher.FirstSurname @teacher.SecondSurname</td>
+      </tr>
+    }
+    </tbody>
+  </table>
+</div>

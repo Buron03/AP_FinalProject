@@ -1,2 +1,2 @@
 --Query 
-SELECT * FROM Teachers;
+SELECT * FROM Assignatures;

@@ -3,7 +3,7 @@
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
 @{
-    Layout = "Shared/_LoginLayout.cshtml";
+    Layout = "shared/_LoginLayout.cshtml";
 }
 
 <head>
@@ -29,15 +29,15 @@
 
 
         <!-- The content half -->
-        <div class="col-md-6 bg-light">
-            <div class="login d-flex align-items-center py-5">
+        <div class="col-md-6">
+            <div class="login d-flex align-items-center py-5 bg-dark">
 
                 <!-- Demo content-->
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-10 col-xl-7 mx-auto">
                             <h3 class="display-4">Welcome to ASE3 System</h3>
-                            <p class="text-muted mb-4">Login with your username and password</p>
+                            <p class="text mb-4">Login with your username and password</p>
                             <form method="post">
                                 <div class="form-group mb-3">
                                     <input asp-for="TextUsername" class="form-control rounded-pill border-0 shadow-sm px-4" placeholder="Username" required=""/>
