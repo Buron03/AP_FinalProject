@@ -79,3 +79,4 @@ C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\pages\form\add_subject.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\pages\form\add_teacher.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\pages\form\add_group.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\pages\form\add_teacher_subject.cshtml.g.cs

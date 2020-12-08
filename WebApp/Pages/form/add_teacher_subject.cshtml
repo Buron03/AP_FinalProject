@@ -1,0 +1,76 @@
+@page
+
+@{
+ Layout = "../shared/_AdminMenuLayout.cshtml";
+}
+
+@model WebApp.Pages.AddTeacherSubjectModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<head>
+
+    <link rel="stylesheet" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006288/BBBootstrap/choices.min.css?version=7.0.0">
+    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006273/BBBootstrap/choices.min.js?version=7.0.0"></script>
+
+</head>
+
+<div class="jumbotron">
+  <h1 class="display-3">Teacher Subjects</h1>
+  <p class="lead">Select a teacher and his new subjects</p>
+  <hr/>
+
+<form method="POST">
+
+  <!-- Teacher Name -->
+  <div class="form-row">
+    <!-- Teacher Selection -->
+    <div class="col-md-4 mb-3 pull-8">
+      <label for="exampleSelect1">Select the Teacher</label>
+      <select class="form-control" asp-for="TeacherName">
+        @foreach (var item in Model.TeachersNames)
+        {
+            <option value="@item">@item</option>
+        }
+      </select>
+    </div>
+  </div>
+
+  <!-- Subjects -->
+  <div class="form-row">
+    <!-- Subjects Multi Selection -->
+    <div class="col-md-4 mb-3 pull-8">
+      <label for="exampleSelect1">Select the Subjects</label>
+      <select id="choices-multiple-remove-button" placeholder="Select subjects" multiple>
+        @foreach (var item in Model.SubjectsNames)
+        {
+            <option value="@item">@item</option>
+        }
+      </select>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Done</button>
+</form>
+
+@if(Model.HasError)
+{
+    <br><br>
+    <div class="alert alert-danger">
+        <strong>Invalid Inputs</strong>
+    </div>
+}
+</div>
+
+<!-- Initialize the plugin: -->
+<script type="text/javascript">
+
+    $(document).ready(function(){
+    var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
+    removeItemButton: true,
+    maxItemCount:5,
+    searchResultLimit:5,
+    renderChoiceLimit:5
+    });
+    });
+
+</script>
