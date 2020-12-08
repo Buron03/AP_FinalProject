@@ -1,0 +1,63 @@
+@page
+
+@{
+ Layout = "../shared/_AdminMenuLayout.cshtml";
+}
+
+@model WebApp.Pages.AddSubjectModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="jumbotron">
+  <h1 class="display-3">Subject Form</h1>
+  <p class="lead">Complete the form and submit it</p>
+  <hr/>
+
+<form method="POST">
+  <!-- Name -->
+  <div class="form-row">
+
+    <!-- Subject Name -->
+    <div class="col-md-6 mb-3 pull-6">
+      <label for="validationServer013">Subject Name</label>
+      <input asp-for="Name" class="form-control" placeholder="Subject Name" required>
+    </div>
+
+  </div>
+
+  <!-- Hours -->
+  <div class="form-row">
+
+    <!-- Theoretical Hours -->
+    <div class="col-md-3 mb-3 pull-6">
+      <label for="validationServer013">Theoretical Hours</label>
+      <input asp-for="TheoreticalHours" class="form-control" placeholder="Theoretical Hours" required>
+    </div>
+
+    <!-- Practical Hours -->
+    <div class="col-md-3 mb-3 pull-6">
+      <label for="validationServer013">Practical Hours</label>
+      <input asp-for="PracticalHours" class="form-control" placeholder="Practical Hours" required>
+    </div>
+
+  </div>
+
+  <!-- Agreenment -->
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="invalidCheck33" required>
+      <label class="custom-control-label" for="invalidCheck33">Agree to terms and conditions</label>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+@if(Model.HasError)
+{
+    <br><br>
+    <div class="alert alert-danger">
+        <strong>Invalid Inputs</strong>
+    </div>
+}
+
+</div>

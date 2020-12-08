@@ -15,5 +15,11 @@ namespace AppContext.Const
         public const int MIN_GROUPS_SUBJECTS = 5;
         public const int MAX_GROUP_TEACHERS = 10;
         public const int MIN_GROUP_TEACHERS = 3;
+
+        //Subject const
+        public const int MAX_THEORETICAL_HOURS = 5;
+        public const int MAX_PRACTICAL_HOURS = 5;
+        public const int MIN_THEORETICAL_HOURS = 0;
+        public const int MIN_PRACTICAL_HOURS = 0;
     }
 }

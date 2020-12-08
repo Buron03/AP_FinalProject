@@ -76,3 +76,4 @@ C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\search\groups.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\search\subjects.cshtml.g.cs
 C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\Pages\search\teachers.cshtml.g.cs
+C:\Users\eilopez\Desktop\FinalProject\WebApp\obj\Debug\netcoreapp3.1\Razor\pages\form\add_subject.cshtml.g.cs

@@ -286,5 +286,16 @@ namespace WebApp.Helpers
 
             return teacherAssignatures;
         }
+
+        public bool IsAValidSubject(Subject subject)
+        {
+            return 
+            (
+                subject.PracticalHours >= MIN_PRACTICAL_HOURS &&
+                subject.PracticalHours <= MAX_PRACTICAL_HOURS &&
+                subject.TheoreticalHours >= MIN_THEORETICAL_HOURS &&
+                subject.TheoreticalHours <= MAX_THEORETICAL_HOURS
+            );
+        }
     }
 }
