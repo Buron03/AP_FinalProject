@@ -1,76 +1,101 @@
 @page
 
-@{
- Layout = "../shared/_AdminMenuLayout.cshtml";
-}
-
 @model WebApp.Pages.AddTeacherSubjectModel
 @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
 
-<head>
-
-    <link rel="stylesheet" href="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006288/BBBootstrap/choices.min.css?version=7.0.0">
-    <script src="https://res.cloudinary.com/dxfq3iotg/raw/upload/v1569006273/BBBootstrap/choices.min.js?version=7.0.0"></script>
-
-</head>
+@{
+  Layout = "../shared/_AdminMenuLayout.cshtml";
+}
 
 <div class="jumbotron">
-  <h1 class="display-3">Teacher Subjects</h1>
-  <p class="lead">Select a teacher and his new subjects</p>
+  <h1 class="display-3">Teacher's Subjects</h1>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Total Hours</th>
+          <th>Practical Hours</th>
+          <th>Theoretical Hours</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+      @foreach(var teacher in Model.Teachers)
+      {
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          @if(Model.LessThanMaxSubjects(teacher))
+          {
+           <th class="bg-primary">Teacher: @teacher.FirstName @teacher.SecondName @teacher.FirstSurname @teacher.SecondSurname</th>
+          }
+          else
+          {
+            <th class="bg-success">Teacher: @teacher.FirstName @teacher.SecondName @teacher.FirstSurname @teacher.SecondSurname</th>
+          }
+        </tr>
+      @foreach(var teacherSubject in Model.GetTeacherSubjects(teacher.IdTeacher))
+      {
+        <tr>
+          <td>@(Model.GetSubject(teacherSubject).PracticalHours + Model.GetSubject(teacherSubject).TheoreticalHours)</td>
+          <td>@Model.GetSubject(teacherSubject).PracticalHours</td>
+          <td>@Model.GetSubject(teacherSubject).TheoreticalHours</td>
+          <td>@Model.GetSubject(teacherSubject).Name</td>
+        </tr>
+      }
+      }
+      </tbody>
+    </table>
+</div>
+<br><br>
+
+<div class="jumbotron">
+  <h1 class="display-3">Add New Teacher Subject</h1>
+  <p class="lead">Select the teacher and the new subject. Only appears the valid teachers and if your selection
+    already exists then it won't be changes by submiting
+  </p>
   <hr/>
 
 <form method="POST">
 
-  <!-- Teacher Name -->
+  <!-- Selection -->
   <div class="form-row">
-    <!-- Teacher Selection -->
-    <div class="col-md-4 mb-3 pull-8">
-      <label for="exampleSelect1">Select the Teacher</label>
-      <select class="form-control" asp-for="TeacherName">
-        @foreach (var item in Model.TeachersNames)
+
+    <!-- Subject Name -->
+    <div class="col-md-4 mb-3 pull-4">
+      <label for="exampleSelect1">Select the subject</label>
+      <select class="form-control" asp-for="SubjectID">
+        @foreach (var item in Model.Subjects)
         {
-            <option value="@item">@item</option>
+            <option value="@item.IdSubject">@item.Name</option>
         }
       </select>
     </div>
-  </div>
 
-  <!-- Subjects -->
-  <div class="form-row">
-    <!-- Subjects Multi Selection -->
-    <div class="col-md-4 mb-3 pull-8">
-      <label for="exampleSelect1">Select the Subjects</label>
-      <select id="choices-multiple-remove-button" placeholder="Select subjects" multiple>
-        @foreach (var item in Model.SubjectsNames)
+    <!-- Teacher Name -->
+    <div class="col-md-4 mb-3 pull-4">
+      <label for="exampleSelect1">Select the teacher</label>
+      <select class="form-control" asp-for="TeacherID">
+        @foreach (var item in Model.Teachers)
         {
-            <option value="@item">@item</option>
+          @if(Model.LessThanMaxSubjects(item))
+          {
+            <option value="@item.IdTeacher">@item.FirstName @item.FirstSurname</option>
+          }
         }
       </select>
     </div>
+
   </div>
 
-  <button class="btn btn-primary" type="submit">Done</button>
+  <!-- Agreenment -->
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="invalidCheck33" required>
+      <label class="custom-control-label" for="invalidCheck33">Agree to terms and conditions</label>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit form</button>
 </form>
-
-@if(Model.HasError)
-{
-    <br><br>
-    <div class="alert alert-danger">
-        <strong>Invalid Inputs</strong>
-    </div>
-}
-</div>
-
-<!-- Initialize the plugin: -->
-<script type="text/javascript">
-
-    $(document).ready(function(){
-    var multipleCancelButton = new Choices('#choices-multiple-remove-button', {
-    removeItemButton: true,
-    maxItemCount:5,
-    searchResultLimit:5,
-    renderChoiceLimit:5
-    });
-    });
-
-</script>

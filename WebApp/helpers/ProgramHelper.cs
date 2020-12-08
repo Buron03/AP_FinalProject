@@ -297,5 +297,26 @@ namespace WebApp.Helpers
                 subject.TheoreticalHours <= MAX_THEORETICAL_HOURS
             );
         }
+
+        public List<TeacherSubject> GetTeacherSubjects(int IdTeacher)
+        {
+            IEnumerable<TeacherSubject> teacherSubjects = db.TeacherSubjects;
+            List<TeacherSubject> thisTeacherSubjects = new List<TeacherSubject>();
+            foreach (var item in teacherSubjects)
+            {
+                if (item.IdTeacher == IdTeacher)
+                {
+                    thisTeacherSubjects.Add(item);
+                }
+            }
+
+            return thisTeacherSubjects;
+        }
+
+        public bool LessThanMaxSubjects(int IdTeacher)
+        {
+            int subjects = GetTotalSubjects(IdTeacher);
+            return (subjects < MAX_SUBJECTS);
+        }
     }
 }
