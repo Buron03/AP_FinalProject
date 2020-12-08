@@ -1,0 +1,51 @@
+@page
+
+@{
+ Layout = "../shared/_AdminMenuLayout.cshtml";
+}
+
+@model WebApp.Pages.AddGroupModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+<div class="jumbotron">
+  <h1 class="display-3">Group Form</h1>
+  <p class="lead">Complete the form and submit it</p>
+  <hr/>
+
+<form method="POST">
+
+  <!-- Period Type -->
+  <div class="form-row">
+
+    <!-- Period Type-->
+    <div class="col-md-4 mb-3 pull-8">
+      <label for="exampleSelect1">Select the period type</label>
+      <select class="form-control" asp-for="PeriodType">
+        @foreach (var item in Model.PeriodTypes)
+        {
+            <option value="@item">@item</option>
+        }
+      </select>
+    </div>
+  </div>
+
+  <!-- Agreenment -->
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="invalidCheck33" required>
+      <label class="custom-control-label" for="invalidCheck33">Agree to terms and conditions</label>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+@if(Model.HasError)
+{
+    <br><br>
+    <div class="alert alert-danger">
+        <strong>Invalid Inputs</strong>
+    </div>
+}
+
+</div>

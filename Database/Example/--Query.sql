@@ -1,2 +1,2 @@
 --Query 
-SELECT * FROM GroupSubjects;
+SELECT * FROM Teachers;

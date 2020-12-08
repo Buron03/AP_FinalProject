@@ -1,0 +1,39 @@
+namespace AppContext.Models
+{
+    public enum State
+    {
+        Aguascalientes, 
+        BajaCalifornia, 
+        BajaCaliforniaSur, 
+        Campeche, 
+        Chiapas, 
+        Chihuahua, 
+        CiudadDeMexico, 
+        Coahuila, 
+        Colima, 
+        Durango, 
+        Guanajuato, 
+        Guerrero, 
+        Hidalgo, 
+        Jalisco, 
+        Mexico, 
+        Michoacan, 
+        Morelos, 
+        Nayarit, 
+        NuevoLeon, 
+        Oaxaca, 
+        Puebla, 
+        Queretaro, 
+        QuintanaRoo, 
+        SanLuisPotosi, 
+        Sinaloa, 
+        Sonora, 
+        Tabasco, 
+        Tamaulipas, 
+        Tlaxcala, 
+        Veracruz, 
+        Yucatan, 
+        Zacatecas, 
+        Extranjero
+    }
+}

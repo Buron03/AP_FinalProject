@@ -14407,6 +14407,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_teacher.cshtml",
+      "TargetPath": "pages\\form\\add_teacher.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\admin_home.cshtml",
       "TargetPath": "pages\\admin_home.cshtml",
       "FileKind": "mvc"
@@ -14434,6 +14439,16 @@
     {
       "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\shared\\_LoginLayout.cshtml",
       "TargetPath": "pages\\shared\\_LoginLayout.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_teacher_subject.cshtml",
+      "TargetPath": "pages\\form\\add_teacher_subject.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_group.cshtml",
+      "TargetPath": "pages\\form\\add_group.cshtml",
       "FileKind": "mvc"
     }
   ],

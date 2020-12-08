@@ -1,0 +1,108 @@
+@page
+
+@{
+ Layout = "../shared/_AdminMenuLayout.cshtml";
+}
+
+@model WebApp.Pages.AddTeacherModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@using AppContext.Models
+
+<div class="jumbotron">
+  <h1 class="display-3">Teacher Form</h1>
+  <p class="lead">Complete the form and submit it</p>
+  <hr/>
+
+<form method="POST">
+
+  <!-- Name -->
+  <div class="form-row">
+
+    <!-- Middle Name -->
+    <div class="col-md-6 mb-3">
+      <label for="validationServer013">Middle Name</label>
+      <input asp-for="SecondName" class="form-control" placeholder="Middle Name">
+    </div>
+    
+    <!-- First Name -->
+    <div class="col-md-6 mb-3">
+      <label for="validationServer013">First Name</label>
+      <input asp-for="FirstName" class="form-control" placeholder="First Name" required>
+    </div>
+
+  </div>
+
+  <!-- Last Names and gender -->
+  <div class="form-row">
+
+    <!-- Gender --> 
+    <div class="col-md-2 mb-3 pull-2">
+      <label>Gender</label>
+      <select asp-for="Gender" class="form-control">
+        <option value="Male">Male</option>
+        <option value="Male">Famale</option>
+      </select>
+    </div>
+
+    <!-- Mother's Last Name -->
+    <div class="col-md-4 mb-3 pull-2">
+      <label for="validationServer013">Mother's Last Name</label>
+      <input asp-for="SecondSurname" class="form-control" placeholder="Mother Last Name" required>
+    </div>
+
+    <!-- Father's Last Name -->
+    <div class="col-md-4 mb-3 pull-2">
+      <label for="validationServer013">Father's Last Name</label>
+      <input asp-for="FirstSurname" class="form-control" placeholder="Father Last Name" required>
+    </div>
+    
+  </div>
+
+  <!-- Birth Info -->
+  <div class="form-row">
+
+    <!-- Teacher Type -->
+    <div class="col-md-4 mb-3">
+      <label for="exampleSelect1">Select the teacher type</label>
+      <select class="form-control" asp-for="TeacherKind">
+        @foreach (var item in Model.ListTeachers)
+        {
+            <option value="@item">@item</option>
+        }
+      </select>
+    </div>
+
+    <!-- Date of Birth -->
+    <div class="col-md-4 mb-3">
+      <label for="exampleSelect1">Select the birth date</label>
+      <input asp-for="DateOfBirth" class="form-control" required>
+    </div>
+
+    <!-- State of Birth -->
+    <div class="col-md-4 mb-3">
+      <label for="exampleSelect1">Select the birth state</label>
+      @Html.DropDownList("State", new SelectList(Enum.GetValues(typeof(State))), new { @class="form-control" } )
+    </div>
+
+  </div>
+
+  <!-- Agreenment -->
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="invalidCheck33" required>
+      <label class="custom-control-label" for="invalidCheck33">Agree to terms and conditions</label>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>
+
+@if(Model.HasError)
+{
+    <br><br>
+    <div class="alert alert-danger">
+        <strong>Invalid Inputs</strong>
+    </div>
+}
+
+</div>
