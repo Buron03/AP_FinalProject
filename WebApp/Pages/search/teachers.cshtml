@@ -23,7 +23,7 @@
     @foreach(var teacher in Model.Teachers)
     {
       <tr>
-          @if(Model.GetStatus(teacher))
+          @if(Model.GetTeacherStatus(teacher))
           {
             <td class="bg-success">Complete</td>
           }

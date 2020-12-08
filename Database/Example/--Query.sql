@@ -1,2 +1,2 @@
 --Query 
-SELECT * FROM Assignatures;
+SELECT * FROM GroupSubjects;

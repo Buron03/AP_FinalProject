@@ -10,12 +10,24 @@
   <h1 class="display-3">Subjects</h1>
   <table class="table">
     <thead class="thead-inverse">
-      <tr><th>School Subjects</th></tr>
+      <tr>
+        <th>Total Teachers of Subject</th>
+        <th>Total Hours</th>
+        <th>Practical Hours</th>
+        <th>Theoretical Hours</th>
+        <th>Name</th>
+      </tr>
     </thead>
     <tbody>
     @foreach(var subject in Model.Subjects)
     {
-      <tr><td>@subject.Name</td></tr>
+      <tr>
+        <td>@Model.GetTotalTeachersOfSubject(subject.IdSubject)</td>
+        <td>@(subject.PracticalHours + subject.TheoreticalHours)</td>
+        <td>@subject.PracticalHours</td>
+        <td>@subject.TheoreticalHours</td>
+        <td>@subject.Name</td>
+      </tr>
     }
     </tbody>
   </table>

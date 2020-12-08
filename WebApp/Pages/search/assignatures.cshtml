@@ -8,15 +8,32 @@
 
 <div class="jumbotron">
   <h1 class="display-3">Assignatures</h1>
-  <table class="table">
-    <thead class="thead-inverse">
-      <tr><th>School Assignatures</th></tr>
-    </thead>
-    <tbody>
-    @foreach(var assignature in Model.Assignatures)
-    {
-      <tr><td>@assignature.IdTeacher teaches @assignature.IdSubject to @assignature.IdGroup</td></tr>
-    }
-    </tbody>
-  </table>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Hours</th>
+          <th>Group</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+      @foreach(var teacher in Model.Teachers)
+      {
+        <tr>
+          <th></th>
+          <th></th>
+          <th class="bg-primary">Teacher: @teacher.FirstName @teacher.SecondName @teacher.FirstSurname @teacher.SecondSurname</th>
+        </tr>
+      @foreach(var assignature in Model.GetTeacherAssignatures(teacher.IdTeacher))
+      {
+        <tr>
+          <td>@(Model.GetSubject(assignature).TheoreticalHours + Model.GetSubject(assignature).PracticalHours)</td>
+          <td>@Model.GetGroup(assignature).Name</td>
+          <td>@Model.GetSubject(assignature).Name.PadLeft(60, ' ')</td>
+        </tr>
+      }
+      }
+      </tbody>
+    </table>
 </div>

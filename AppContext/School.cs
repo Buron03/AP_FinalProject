@@ -15,6 +15,7 @@ namespace AppContext
         public DbSet<SchoolGroup> SchoolGroups { get; set; }
 
         public DbSet<TeacherSubject> TeacherSubjects { get; set; }
+        public DbSet<GroupSubject> GroupSubjects { get; set; }
         public DbSet<Assignature> Assignatures { get; set; }
 
 

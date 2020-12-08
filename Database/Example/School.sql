@@ -6,6 +6,15 @@
 PRAGMA foreign_keys = off;
 BEGIN TRANSACTION;
 
+--Table: GroupSubjects
+DROP TABLE IF EXISTS GroupSubjects;
+
+CREATE TABLE GroupSubjects (
+    IdGroupSubject INTEGER PRIMARY KEY AUTOINCREMENT,
+    IdGroup        INTEGER REFERENCES SchoolGroups (IdGroup),
+    IdSubject        INTEGER REFERENCES Subjects (IdSubject) 
+);
+
 -- Table: Assignatures
 DROP TABLE IF EXISTS Assignatures;
 

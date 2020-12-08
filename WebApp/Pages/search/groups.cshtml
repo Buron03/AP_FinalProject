@@ -10,12 +10,37 @@
   <h1 class="display-3">Groups</h1>
   <table class="table">
     <thead class="thead-inverse">
-      <tr><th>School Groups</th></tr>
+      <tr>
+        <th>Status</th>
+        <th>Total Subjects</th>
+        <th>Total Teachers</th>
+        <th>Total Hours</th>
+        <th>Close Date</th>
+        <th>Start Date</th>
+        <th>Kind</th>
+        <th>Name</th>
+      </tr>
     </thead>
     <tbody>
     @foreach(var group in Model.Groups)
     {
-      <tr><td>@group.Name</td></tr>
+      <tr>
+        @if(Model.GetGroupStatus(group.IdGroup))
+          {
+            <td class="bg-success">Complete</td>
+          }
+          else
+          {
+            <td class="bg-warning">Incomplete</td>
+          }
+        <td>@Model.GetTotalSubjectsOfGroup(group.IdGroup)</td>
+        <td>@Model.GetTotalTeachersOfGroup(group.IdGroup)</td>
+        <td>@Model.GetTotalHoursGroup(group.IdGroup)</td>
+        <td>@group.CloseDate.ToShortDateString()</td>
+        <td>@group.StartDate.ToShortDateString()</td>
+        <td>@Model.GetPeriodKind(group.IdPeriodKind).Name</td>
+        <td>@group.Name</td>
+      </tr>
     }
     </tbody>
   </table>
