@@ -1,0 +1,101 @@
+@page
+
+@model WebApp.Pages.AddGroupSubjectModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+  Layout = "../shared/_AdminMenuLayout.cshtml";
+}
+
+<div class="jumbotron">
+  <h1 class="display-3">Groups's Subjects</h1>
+    <table class="table">
+      <thead class="thead-inverse">
+        <tr>
+          <th>Total Hours</th>
+          <th>Practical Hours</th>
+          <th>Theoretical Hours</th>
+          <th>Subject</th>
+        </tr>
+      </thead>
+      
+      <tbody>
+      @foreach(var group in Model.Groups)
+      {
+        <tr>
+          <th></th>
+          <th></th>
+          <th></th>
+          @if(Model.LessThanMaxGroupSubjects(group))
+          {
+           <th class="bg-primary">Group: @group.Name</th>
+          }
+          else
+          {
+            <th class="bg-success">Group: @group.Name</th>
+          }
+        </tr>
+      @foreach(var groupSubject in Model.GetGroupSubjects(group.IdGroup))
+      {
+        <tr>
+          <td>@(Model.GetSubject(groupSubject).PracticalHours + Model.GetSubject(groupSubject).TheoreticalHours)</td>
+          <td>@Model.GetSubject(groupSubject).PracticalHours</td>
+          <td>@Model.GetSubject(groupSubject).TheoreticalHours</td>
+          <td>@Model.GetSubject(groupSubject).Name</td>
+        </tr>
+      }
+      }
+      </tbody>
+    </table>
+</div>
+<br><br>
+
+<div class="jumbotron">
+  <h1 class="display-3">Add New Group Subject</h1>
+  <p class="lead">Select the group and the new subject. Only appears the valid groups and if your selection
+    already exists then it won't be changes by submiting
+  </p>
+  <hr/>
+
+<form method="POST">
+
+  <!-- Selection -->
+  <div class="form-row">
+
+    <!-- Subject Name -->
+    <div class="col-md-4 mb-3 pull-4">
+      <label for="exampleSelect1">Select the subject</label>
+      <select class="form-control" asp-for="SubjectID">
+        @foreach (var item in Model.Subjects)
+        {
+            <option value="@item.IdSubject">@item.Name</option>
+        }
+      </select>
+    </div>
+
+    <!-- Group Name -->
+    <div class="col-md-4 mb-3 pull-4">
+      <label for="exampleSelect1">Select the group</label>
+      <select class="form-control" asp-for="GroupID">
+        @foreach (var item in Model.Groups)
+        {
+          @if(Model.LessThanMaxGroupSubjects(item))
+          {
+            <option value="@item.IdGroup">@item.Name</option>
+          }
+        }
+      </select>
+    </div>
+
+  </div>
+
+  <!-- Agreenment -->
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="invalidCheck33" required>
+      <label class="custom-control-label" for="invalidCheck33">Agree to terms and conditions</label>
+    </div>
+  </div>
+
+  <button class="btn btn-primary" type="submit">Submit form</button>
+</form>

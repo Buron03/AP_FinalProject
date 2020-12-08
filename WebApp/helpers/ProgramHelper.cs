@@ -248,17 +248,27 @@ namespace WebApp.Helpers
 
         public bool AreClassesOk(int IdGroup)
         {
-            IEnumerable<GroupSubject> groupSubjects = db.GroupSubjects;
             IEnumerable<Assignature> assignatures = db.Assignatures;
+            IEnumerable<GroupSubject> groupSubjects = db.GroupSubjects; 
 
-            foreach(var groupSubject in groupSubjects)
+            //Search possible classes for this group
+            List<GroupSubject> thisGroupSubjects = new List<GroupSubject>();
+            foreach (var item in groupSubjects)
             {
-                bool flag = false;
+                if (item.IdGroup == IdGroup)
+                {
+                    thisGroupSubjects.Add(item);
+                }
+            }
+
+            bool flag = false;
+            foreach (var item in thisGroupSubjects)
+            {
                 foreach (var assignature in assignatures)
                 {
-                    flag = (assignature.IdGroup == groupSubject.IdGroup && assignature.IdSubject == groupSubject.IdSubject);
-                    if (flag)
+                    if (assignature.IdSubject == item.IdSubject && assignature.IdGroup == item.IdGroup)
                     {
+                        flag = true;
                         break;
                     }
                 }
@@ -267,7 +277,6 @@ namespace WebApp.Helpers
                     return false;
                 }
             }
-
             return true;
         }
 
@@ -317,6 +326,28 @@ namespace WebApp.Helpers
         {
             int subjects = GetTotalSubjects(IdTeacher);
             return (subjects < MAX_SUBJECTS);
+        }
+
+        public List<GroupSubject> GetGroupSubjects(int IdGroup)
+        {
+            IEnumerable<GroupSubject> groupSubjects = db.GroupSubjects;
+            List<GroupSubject> thisGroupSubjects = new List<GroupSubject>();
+
+            foreach (var groupSubject in groupSubjects)
+            {
+                if (groupSubject.IdGroup == IdGroup)
+                {
+                    thisGroupSubjects.Add(groupSubject);
+                }               
+            }
+
+            return thisGroupSubjects;
+        }
+
+        public bool LessThanMaxGroupSubjects(int IdGroup)
+        {
+            int subjects = GetTotalSubjectsOfGroup(IdGroup);
+            return (subjects < MAX_GROUP_SUBJECTS);
         }
     }
 }

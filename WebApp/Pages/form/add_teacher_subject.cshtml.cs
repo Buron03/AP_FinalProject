@@ -90,7 +90,7 @@ namespace WebApp.Pages
 
                 if (teacher.FirstName == null || subject.Name == null)
                 {
-                     return RedirectToPage("add_teacher_subject", new { teacher.FirstName } );
+                     return RedirectToPage("add_teacher_subject");
                 }
 
                 bool flag = true;
@@ -117,7 +117,7 @@ namespace WebApp.Pages
                 }
             }
 
-            return RedirectToPage("add_teacher_subject", new { TeacherID } );
+            return RedirectToPage("add_teacher_subject");
         }
    } 
 }

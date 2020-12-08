@@ -14427,6 +14427,11 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_group_subject.cshtml",
+      "TargetPath": "pages\\form\\add_group_subject.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\teachers.cshtml",
       "TargetPath": "pages\\search\\teachers.cshtml",
       "FileKind": "mvc"
