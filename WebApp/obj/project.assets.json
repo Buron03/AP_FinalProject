@@ -1027,23 +1027,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\eilopez\\.nuget\\packages\\": {},
+    "C:\\Users\\a1730\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\WebApp.csproj",
+      "projectUniqueName": "C:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\WebApp.csproj",
       "projectName": "WebApp",
-      "projectPath": "C:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\WebApp.csproj",
-      "packagesPath": "C:\\Users\\eilopez\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\obj\\",
+      "projectPath": "C:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\WebApp.csproj",
+      "packagesPath": "C:\\Users\\a1730\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\eilopez\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\a1730\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -1057,8 +1057,8 @@
       "frameworks": {
         "netcoreapp3.1": {
           "projectReferences": {
-            "C:\\Users\\eilopez\\Desktop\\FinalProject\\AppContext\\AppContext.csproj": {
-              "projectPath": "C:\\Users\\eilopez\\Desktop\\FinalProject\\AppContext\\AppContext.csproj"
+            "C:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\AppContext\\AppContext.csproj": {
+              "projectPath": "C:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\AppContext\\AppContext.csproj"
             }
           }
         }

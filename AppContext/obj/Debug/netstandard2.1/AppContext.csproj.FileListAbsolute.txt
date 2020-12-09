@@ -7,3 +7,12 @@ C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppCon
 C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.csproj.CoreCompileInputs.cache
 C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.dll
 C:\Users\eilopez\Desktop\FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.pdb
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\bin\Debug\netstandard2.1\AppContext.deps.json
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\bin\Debug\netstandard2.1\AppContext.dll
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\bin\Debug\netstandard2.1\AppContext.pdb
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.csprojAssemblyReference.cache
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.AssemblyInfoInputs.cache
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.AssemblyInfo.cs
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.csproj.CoreCompileInputs.cache
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.dll
+C:\Users\a1730\Desktop\CETI\VII_Semester\Advanced_Programming\III_Partial\Final_Project\AP_FinalProject\AppContext\obj\Debug\netstandard2.1\AppContext.pdb

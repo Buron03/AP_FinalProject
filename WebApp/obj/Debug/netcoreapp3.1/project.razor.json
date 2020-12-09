@@ -1,5 +1,5 @@
 {
-  "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\WebApp.csproj",
+  "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\WebApp.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14392,68 +14392,68 @@
   "RootNamespace": "WebApp",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\groups.cshtml",
-      "TargetPath": "pages\\search\\groups.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\form\\add_teacher_subject.cshtml",
+      "TargetPath": "Pages\\form\\add_teacher_subject.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\subjects.cshtml",
-      "TargetPath": "pages\\search\\subjects.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\index.cshtml",
+      "TargetPath": "Pages\\index.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_subject.cshtml",
-      "TargetPath": "pages\\form\\add_subject.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\search\\subjects.cshtml",
+      "TargetPath": "Pages\\search\\subjects.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_teacher.cshtml",
-      "TargetPath": "pages\\form\\add_teacher.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\search\\groups.cshtml",
+      "TargetPath": "Pages\\search\\groups.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\admin_home.cshtml",
-      "TargetPath": "pages\\admin_home.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\search\\teachers.cshtml",
+      "TargetPath": "Pages\\search\\teachers.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\shared\\_AdminMenuLayout.cshtml",
-      "TargetPath": "pages\\shared\\_AdminMenuLayout.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\admin_home.cshtml",
+      "TargetPath": "Pages\\admin_home.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\assignatures.cshtml",
-      "TargetPath": "pages\\search\\assignatures.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\Shared\\_LoginLayout.cshtml",
+      "TargetPath": "Pages\\Shared\\_LoginLayout.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_group_subject.cshtml",
-      "TargetPath": "pages\\form\\add_group_subject.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\form\\add_group_subject.cshtml",
+      "TargetPath": "Pages\\form\\add_group_subject.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\search\\teachers.cshtml",
-      "TargetPath": "pages\\search\\teachers.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\form\\add_group.cshtml",
+      "TargetPath": "Pages\\form\\add_group.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\index.cshtml",
-      "TargetPath": "pages\\index.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\form\\add_teacher.cshtml",
+      "TargetPath": "Pages\\form\\add_teacher.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\shared\\_LoginLayout.cshtml",
-      "TargetPath": "pages\\shared\\_LoginLayout.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\form\\add_subject.cshtml",
+      "TargetPath": "Pages\\form\\add_subject.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_teacher_subject.cshtml",
-      "TargetPath": "pages\\form\\add_teacher_subject.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\search\\assignatures.cshtml",
+      "TargetPath": "Pages\\search\\assignatures.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "c:\\Users\\eilopez\\Desktop\\FinalProject\\WebApp\\pages\\form\\add_group.cshtml",
-      "TargetPath": "pages\\form\\add_group.cshtml",
+      "FilePath": "c:\\Users\\a1730\\Desktop\\CETI\\VII_Semester\\Advanced_Programming\\III_Partial\\Final_Project\\AP_FinalProject\\WebApp\\Pages\\Shared\\_AdminMenuLayout.cshtml",
+      "TargetPath": "Pages\\Shared\\_AdminMenuLayout.cshtml",
       "FileKind": "mvc"
     }
   ],
